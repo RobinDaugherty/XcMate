@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "061A7E8927357D0600AE6B25"
-               BuildableName = "SourceEditorExtension.appex"
+               BuildableName = "XcMate.appex"
                BlueprintName = "SourceEditorExtension"
                ReferencedContainer = "container:XcMate.xcodeproj">
             </BuildableReference>
@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "061A7E3A27356B3000AE6B25"
-               BuildableName = "XcMate.app"
-               BlueprintName = "XcMate"
+               BuildableName = "XcMateApp.app"
+               BlueprintName = "XcMateApp"
                ReferencedContainer = "container:XcMate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "061A7E3A27356B3000AE6B25"
-            BuildableName = "XcMate.app"
-            BlueprintName = "XcMate"
+            BuildableName = "XcMateApp.app"
+            BlueprintName = "XcMateApp"
             ReferencedContainer = "container:XcMate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "061A7E3A27356B3000AE6B25"
-            BuildableName = "XcMate.app"
-            BlueprintName = "XcMate"
+            BuildableName = "XcMateApp.app"
+            BlueprintName = "XcMateApp"
             ReferencedContainer = "container:XcMate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
