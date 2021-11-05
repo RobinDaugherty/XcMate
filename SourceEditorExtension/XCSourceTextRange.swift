@@ -12,8 +12,11 @@ extension XCSourceTextRange {
     var isInsertionPoint: Bool {
         start == end
     }
+}
 
-    var rangeOfEntireContainingLine: Self {
-        Self(start: self.start.beginningOfLine, end: self.start.endOfLineIncludingNewline)
+extension XCSourceTextRange: Comparable {
+    public static func < (lhs: XCSourceTextRange, rhs: XCSourceTextRange) -> Bool {
+        // This makes the assumption that any array of selections is non-overlapping
+        lhs.start < rhs.start
     }
 }

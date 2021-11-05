@@ -10,7 +10,14 @@ import XcodeKit
 
 extension XCSourceTextBuffer {
     func string(in range: XCSourceTextRange) -> String {
+        if range.start.line == range.end.line && range.start.line == lines.count {
+            // The weird special case, where the last "line" of the buffer doesn't end with a newline, but if that line is duplicated, it must end in a newline.
+            return "\n"
+        }
+
         let lines: [String] = (range.start.line...range.end.line).map { lineNumber -> String in
+            guard lineNumber < self.lines.count else { return "" }
+
             let line = self.lines[lineNumber] as! String
 
             let startIndex: String.Index

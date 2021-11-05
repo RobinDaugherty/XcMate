@@ -8,18 +8,21 @@
 import Foundation
 import XcodeKit
 
+extension XCSourceTextPosition {
+    var beginningOfLine: Self {
+        Self(line: self.line, column: 0)
+    }
+}
+
 extension XCSourceTextPosition: Equatable {
     public static func == (lhs: XCSourceTextPosition, rhs: XCSourceTextPosition) -> Bool {
         lhs.line == rhs.line && lhs.column == rhs.column
     }
+}
 
-    var beginningOfLine: Self {
-        Self(line: self.line, column: 0)
-    }
-
-    var endOfLineIncludingNewline: Self {
-        // TODO: if the selection IS the last line, does this work/crash?
-
-        Self(line: self.line + 1, column: 0)
+extension XCSourceTextPosition: Comparable {
+    public static func < (lhs: XCSourceTextPosition, rhs: XCSourceTextPosition) -> Bool {
+        lhs.line < rhs.line ||
+        (lhs.line == rhs.line && lhs.column < rhs.column)
     }
 }
