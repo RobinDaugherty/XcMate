@@ -14,13 +14,14 @@
 		061A7E5927356B3200AE6B25 /* XcMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E5827356B3200AE6B25 /* XcMateUITests.swift */; };
 		061A7E5B27356B3200AE6B25 /* XcMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E5A27356B3200AE6B25 /* XcMateUITestsLaunchTests.swift */; };
 		061A7E8B27357D0600AE6B25 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A7E6D27356B6900AE6B25 /* Cocoa.framework */; };
-		061A7E8C27357D0600AE6B25 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A7E6F27356B6900AE6B25 /* XcodeKit.framework */; };
 		061A7E8F27357D0600AE6B25 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E8E27357D0600AE6B25 /* SourceEditorExtension.swift */; };
 		061A7E9627357D0600AE6B25 /* SourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 061A7E8A27357D0600AE6B25 /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		061A7E9A27357D1700AE6B25 /* XCSourceTextRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E83273577DC00AE6B25 /* XCSourceTextRange.swift */; };
 		061A7E9B27357D1700AE6B25 /* XCSourceTextPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E812735779D00AE6B25 /* XCSourceTextPosition.swift */; };
 		061A7E9C27357D1700AE6B25 /* XCSourceTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E7F2735779300AE6B25 /* XCSourceTextBuffer.swift */; };
 		061A7E9D27357D3000AE6B25 /* DuplicateSelectionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E7427356B6900AE6B25 /* DuplicateSelectionCommand.swift */; };
+		0664C9DE27358138001FF8D5 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A7E6F27356B6900AE6B25 /* XcodeKit.framework */; };
+		0664C9DF27358138001FF8D5 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 061A7E6F27356B6900AE6B25 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,17 @@
 				061A7E9627357D0600AE6B25 /* SourceEditorExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0664C9E027358138001FF8D5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0664C9DF27358138001FF8D5 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -111,7 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				061A7E8B27357D0600AE6B25 /* Cocoa.framework in Frameworks */,
-				061A7E8C27357D0600AE6B25 /* XcodeKit.framework in Frameworks */,
+				0664C9DE27358138001FF8D5 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +269,7 @@
 				061A7E8627357D0600AE6B25 /* Sources */,
 				061A7E8727357D0600AE6B25 /* Frameworks */,
 				061A7E8827357D0600AE6B25 /* Resources */,
+				0664C9E027358138001FF8D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
