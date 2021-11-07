@@ -12,6 +12,13 @@ extension XCSourceTextRange {
     var isInsertionPoint: Bool {
         start == end
     }
+
+    func movedBy(lines: Int = 0, columns: Int = 0) -> Self {
+        Self(
+            start: XCSourceTextPosition(line: start.line + lines, column: start.column + columns),
+            end: XCSourceTextPosition(line: end.line + lines, column: end.column + columns)
+        )
+    }
 }
 
 extension XCSourceTextRange: Comparable {

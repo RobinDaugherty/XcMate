@@ -44,6 +44,6 @@ extension XCSourceTextBuffer {
             return String(line[startIndex..<endIndex])
         }
 
-        return lines.joined(separator: "\n")
+        return lines.joined()
     }
 }
