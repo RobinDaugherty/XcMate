@@ -17,7 +17,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "061A7E8927357D0600AE6B25"
                BuildableName = "XcMate.appex"
-               BlueprintName = "SourceEditorExtension"
+               BlueprintName = "XcMate"
                ReferencedContainer = "container:XcMate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

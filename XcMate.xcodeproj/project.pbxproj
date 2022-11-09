@@ -15,7 +15,7 @@
 		061A7E5B27356B3200AE6B25 /* XcMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E5A27356B3200AE6B25 /* XcMateUITestsLaunchTests.swift */; };
 		061A7E8B27357D0600AE6B25 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A7E6D27356B6900AE6B25 /* Cocoa.framework */; };
 		061A7E8F27357D0600AE6B25 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E8E27357D0600AE6B25 /* SourceEditorExtension.swift */; };
-		061A7E9627357D0600AE6B25 /* SourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 061A7E8A27357D0600AE6B25 /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		061A7E9627357D0600AE6B25 /* XcMate.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 061A7E8A27357D0600AE6B25 /* XcMate.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		061A7E9A27357D1700AE6B25 /* XCSourceTextRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E83273577DC00AE6B25 /* XCSourceTextRange.swift */; };
 		061A7E9B27357D1700AE6B25 /* XCSourceTextPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E812735779D00AE6B25 /* XCSourceTextPosition.swift */; };
 		061A7E9C27357D1700AE6B25 /* XCSourceTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A7E7F2735779300AE6B25 /* XCSourceTextBuffer.swift */; };
@@ -55,7 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				061A7E9627357D0600AE6B25 /* SourceEditorExtension.appex in Embed App Extensions */,
+				061A7E9627357D0600AE6B25 /* XcMate.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,7 +90,7 @@
 		061A7E7F2735779300AE6B25 /* XCSourceTextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCSourceTextBuffer.swift; sourceTree = "<group>"; };
 		061A7E812735779D00AE6B25 /* XCSourceTextPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCSourceTextPosition.swift; sourceTree = "<group>"; };
 		061A7E83273577DC00AE6B25 /* XCSourceTextRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCSourceTextRange.swift; sourceTree = "<group>"; };
-		061A7E8A27357D0600AE6B25 /* SourceEditorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; name = SourceEditorExtension.appex; path = XcMate.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		061A7E8A27357D0600AE6B25 /* XcMate.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcMate.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		061A7E8E27357D0600AE6B25 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		061A7E9227357D0600AE6B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		061A7E9327357D0600AE6B25 /* SourceEditorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceEditorExtension.entitlements; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				061A7E3B27356B3100AE6B25 /* XcMateApp.app */,
 				061A7E4A27356B3200AE6B25 /* XcMateTests.xctest */,
 				061A7E5427356B3200AE6B25 /* XcMateUITests.xctest */,
-				061A7E8A27357D0600AE6B25 /* SourceEditorExtension.appex */,
+				061A7E8A27357D0600AE6B25 /* XcMate.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,9 +262,9 @@
 			productReference = 061A7E5427356B3200AE6B25 /* XcMateUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		061A7E8927357D0600AE6B25 /* SourceEditorExtension */ = {
+		061A7E8927357D0600AE6B25 /* XcMate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 061A7E9727357D0700AE6B25 /* Build configuration list for PBXNativeTarget "SourceEditorExtension" */;
+			buildConfigurationList = 061A7E9727357D0700AE6B25 /* Build configuration list for PBXNativeTarget "XcMate" */;
 			buildPhases = (
 				061A7E8627357D0600AE6B25 /* Sources */,
 				061A7E8727357D0600AE6B25 /* Frameworks */,
@@ -275,9 +275,9 @@
 			);
 			dependencies = (
 			);
-			name = SourceEditorExtension;
+			name = XcMate;
 			productName = SourceEditorExtension;
-			productReference = 061A7E8A27357D0600AE6B25 /* SourceEditorExtension.appex */;
+			productReference = 061A7E8A27357D0600AE6B25 /* XcMate.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -320,7 +320,7 @@
 			projectRoot = "";
 			targets = (
 				061A7E3A27356B3000AE6B25 /* XcMateApp */,
-				061A7E8927357D0600AE6B25 /* SourceEditorExtension */,
+				061A7E8927357D0600AE6B25 /* XcMate */,
 				061A7E4927356B3200AE6B25 /* XcMateTests */,
 				061A7E5327356B3200AE6B25 /* XcMateUITests */,
 			);
@@ -413,7 +413,7 @@
 		};
 		061A7E9527357D0600AE6B25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 061A7E8927357D0600AE6B25 /* SourceEditorExtension */;
+			target = 061A7E8927357D0600AE6B25 /* XcMate */;
 			targetProxy = 061A7E9427357D0600AE6B25 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -713,7 +713,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SourceEditorExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SourceEditorExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = XcMate;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -741,7 +741,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SourceEditorExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SourceEditorExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = XcMate;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -796,7 +796,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		061A7E9727357D0700AE6B25 /* Build configuration list for PBXNativeTarget "SourceEditorExtension" */ = {
+		061A7E9727357D0700AE6B25 /* Build configuration list for PBXNativeTarget "XcMate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				061A7E9827357D0700AE6B25 /* Debug */,
